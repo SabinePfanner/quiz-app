@@ -19,9 +19,11 @@ header {
     right: 0;
     width: 100%;
     max-height: 10rem;
+    z-index: 1;
 }
 main {
     margin-top: 20%;
+    margin-bottom: 10%;
 }
 .question-card {
     display: flex;
