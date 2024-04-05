@@ -62,6 +62,7 @@ ul {
 .tags {
   display: flex;
   align-self: flex-start;
+  flex-wrap: wrap;
   gap: 5px;
 }
 .tags li {
