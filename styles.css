@@ -7,6 +7,7 @@ body {
   font-weight: 200;
 }
 
+
 header {
   font-size: 1.5rem;
   color: #fff;
@@ -24,22 +25,24 @@ header {
 main {
   margin-top: 20%;
   margin-bottom: 15%;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 .question-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: solid 3px #ff339a;
-  margin: 20px 80px 40px 80px;
   padding: 10px;
   position: relative;
+  margin: 0 0 40 0;
 }
 .question {
   font-size: 1.6rem;
   font-weight: 500;
   margin: 30px;
 }
-.button-card {
+.button {
   border: solid 1px #ff339a;
   border-radius: 25px;
   margin: 15px 0px 40px 0px;
@@ -48,7 +51,7 @@ main {
   color: #ff339a;
   font-size: 1.2rem;
 }
-.button-card:hover {
+.button:hover {
   border: solid 1px #ff339a;
   border-radius: 25px;
   padding: 10px;
@@ -110,7 +113,6 @@ nav {
   justify-content: flex-start;
   align-items: center;
   gap: 100px;
-  margin: 80px 20px 30px 80px;
 }
 .profilbild{
   height: 400px;
@@ -123,7 +125,6 @@ nav {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 10px 80px 10px 80px;
 }
 .counter-icon-solved {
   display: flex;
@@ -210,3 +211,14 @@ input:checked + .slider:before {
   -ms-transform: translateX(27px);
   transform: translateX(27px);
 }
+
+label{
+  color: #ff339a;
+}
+
+.characters-left {
+  font-size: 10px;
+  margin-top: 1px;
+}
+
+
