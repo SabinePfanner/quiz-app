@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
     <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/a46f5700f6.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -10,21 +11,10 @@
     </header>
     <main>
       <section class="question-card">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="50"
-          viewBox="0 -960 960 960"
-          width="50"
-          class="bookmark"
-          data-js="bookmarks"
-        >
-          <path
-            d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"
-          />
-        </svg>
+        <i class="fa-regular fa-bookmark bookmark" data-js="bookmarks"></i>
         <h2 class="question">Welche Funktion hat der Beckenboden?</h2>
-        <button class="button">Antwort ansehen</button>
-        <p hidden>
+        <button class="button" data-js="show-answer">Antwort ansehen</button>
+        <p class="answer hidden" data-js="answer">
           Der Beckenboden ist die kraftvolle Mitte unseres Körpers und hat nicht
           nur einen großen Einfluss auf unsere Gesundheit sondern vor allem auch
           auf unser Wohlbefinden. Ein trainierter, gestärker Beckenboden kann
@@ -38,21 +28,10 @@
         </ul>
       </section>
       <section class="question-card">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="50"
-          viewBox="0 -960 960 960"
-          width="50"
-          class="bookmark"
-          data-js="bookmarks"
-        >
-          <path
-            d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"
-          />
-        </svg>
+        <i class="fa-regular fa-bookmark bookmark" data-js="bookmarks"></i>
         <h2 class="question">Was ist HypoCoreSystem© Training?</h2>
-        <button class="button">Antwort ansehen</button>
-        <p hidden>
+        <button class="button" data-js="show-answer">Antwort ansehen</button>
+        <p class="answer hidden" data-js="answer">
           HypoCoreSystem© basiert auf dem hypopressivem Training welches ein
           neuartiges Trainingskonzept, mit spezieller Atemtechnik und
           Haltungsübungen miteinander kombiniert. Im Vergleich zu den meisten
