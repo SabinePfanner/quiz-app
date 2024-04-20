@@ -1,0 +1,33 @@
+const submitForm = document.querySelector('[data-js="form-new-card"]');
+const question = document.quer;
+
+submitForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+  console.log(data);
+  const newCard = document.createElement("article");
+  document.body.append(newCard);
+  newCard.classList.add("question-card");
+  const bookmark = document.createElement("i");
+  newCard.append(bookmark);
+  bookmark.classList.add("fa-regular", "fa-bookmark", "bookmark");
+  const titleNC = document.createElement("h2");
+  newCard.append(titleNC);
+  titleNC.classList.add("question");
+  titleNC.textContent = event.target.question.value;
+  const buttonNC = document.createElement("button");
+  titleNC.append(buttonNC);
+  buttonNC.classList.add("button");
+  buttonNC.textContent = "Antwort ansehen";
+  const answerNC = document.createElement("p");
+  titleNC.append(answerNC);
+  answerNC.classList.add("answer", "hidden");
+  answerNC.textContent = event.target.answer.value;
+  const tagList = document.createElement("ul");
+  answer.append(tagList);
+  tagList.classList.add("tags");
+  const tagsNC = document.createElement("li");
+  tagList.append(tagsNC);
+  tagsNC.textContent = event.target.tagInput.value;
+});
